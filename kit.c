@@ -16,8 +16,8 @@
 
 // For the banner!
 struct banner_info {
-    char *hostname;
     char *username;
+    char *hostname[128];
     char *path[128];
 };
 
@@ -51,7 +51,6 @@ static void kit_banner(void) {
     struct banner_info *pb, binfo;
     pb = &binfo;
 
-    pb->hostname = (char *)malloc(32 * sizeof(char));
     pb->username = (char *)malloc(32 * sizeof(char));
     
     cuserid(pb->username);
