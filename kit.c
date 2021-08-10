@@ -50,7 +50,6 @@ static void clear_screen(void) {
 static void kit_banner(void) {
     struct banner_info *pb, binfo;
     pb = &binfo;
-
     pb->username = (char *)malloc(32 * sizeof(char));
     
     cuserid(pb->username);
