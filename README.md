@@ -41,6 +41,24 @@ gcc -o bind bind.c -lpcap
 #define PORT 1335
 ```
 
+## Usage
+```
+┌───────┬───────────────────────────────────────┬───────────────┐
+│ Flags │              Description              │ Usage Example │
+├───────┼───────────────────────────────────────┼───────────────┤
+│ -h    │ Displays the available flags          │ -h            │
+│ -i    │ Displays the available interfaces     │ -i            │
+│ -m    │ Displays the network mask             │ -m            │
+│ -s    │ Starts a packet sniffer               │ -s            │
+│ -b    │ Starts a bind-shell                   │ -b            │
+│ -t    │ Starts a TCP server                   │ -t 127.0.0.1  │
+│ -p    │ Does a port scan against the given IP │ -p 127.0.0.1  │
+└───────┴───────────────────────────────────────┴───────────────┘
+```
+
+## Screenshots
+![image](https://user-images.githubusercontent.com/86132648/128873348-bdf1348c-b69c-4f7a-b171-06b0831d3c22.png)
+
 ## Credits
 ```
 https://github.com/0x1CA3
