@@ -3,7 +3,7 @@
     kit - A network utility that has several features.
 </h1>
 <p align="center">
-	kit is a network utility, that contains several tools, including a packet sniffer.
+	kit is a network utility, that contains several tools, including a packet-sniffer. To use the packet-sniffer, make sure you're root.
 </p>
 
 <p align="center">
