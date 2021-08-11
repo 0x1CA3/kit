@@ -121,13 +121,13 @@ void capture_packets(u_char *ex, const struct pcap_pkthdr* pk, const u_char* dat
 {
 	clear_screen();
     int i = 0;
-	char line[255];
-    static int count = 0;
+    static int packets = 0;
+	
+    char line[255];
     
-    printf("        Packets -> %d Packet size -> %d\n", ++count, pk->len);
+    printf("        Packets -> %d Packet size -> %d\n", ++packets, pk->len);
 	
     FILE *fp = fopen("log.txt", "w");
-    
     if (fp == NULL) {
         printf("[!] Failed to create log file! [!]");
     } else {
