@@ -18,7 +18,8 @@
 ## Setup
 ```
 sudo apt-get install libpcap-dev
-gcc -o bind bind.c -lpcap
+gcc -o kit kit.c -lpcap
+./kit
 ```
 
 ## Configuring Port-Range
