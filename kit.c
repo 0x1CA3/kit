@@ -117,8 +117,7 @@ void list_interfaces(void) {
 }
 
 // Gives a status of the packets, and logs the data in a file!
-void capture_packets(u_char *ex, const struct pcap_pkthdr* pk, const u_char* data)
-{
+void capture_packets(u_char *ex, const struct pcap_pkthdr* pk, const u_char* data) {
 	clear_screen();
     int i = 0;
     static int packets = 0;
